@@ -23,7 +23,7 @@ bntEl.addEventListener('click',
             bntEl.innerHTML = 'Spegni la lampadina';
             bntEl.classList.toggle('btn-outline-danger');
             bntEl.classList.toggle('btn-outline-success');
-            titleEl.innerHTML = "LA LAMPADINA E' ACCESA";
+            titleEl.innerHTML = "LA LAMPADINA &Egrave; ACCESA";
             body.classList.toggle('bg-white');
             body.classList.toggle('bg-black');
             titleEl.classList.toggle('text-white');
@@ -33,7 +33,7 @@ bntEl.addEventListener('click',
             bntEl.innerHTML = 'Accendi la lampadina';
             bntEl.classList.toggle('btn-outline-danger');
             bntEl.classList.toggle('btn-outline-success');
-            titleEl.innerHTML = "LA LAMPADINA E' SPENTA";
+            titleEl.innerHTML = "LA LAMPADINA &Egrave; SPENTA";
             body.classList.toggle('bg-white');
             body.classList.toggle('bg-black');
             titleEl.classList.toggle('text-white');
