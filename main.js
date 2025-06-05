@@ -12,6 +12,8 @@ let lampWhiteEl = document.querySelector('img');
 // console.log(lampWhite)
 let bntEl = document.querySelector('button');
 
+let titleEl = document.getElementById('title');
+
 bntEl.addEventListener('click',
     function changeColor() {
         if (lampWhiteEl.src.includes('white')) {
@@ -19,11 +21,13 @@ bntEl.addEventListener('click',
             bntEl.innerHTML = 'Spegni la lampadina';
             bntEl.classList.toggle('btn-outline-danger');
             bntEl.classList.toggle('btn-outline-success');
+            titleEl.innerHTML = "LA LAMPADINA E' ACCESA";
         } else if (lampWhiteEl.src.includes('yellow')) {
             lampWhiteEl.src = './img-9/white_lamp_good.png';
             bntEl.innerHTML = 'Accendi la lampadina';
             bntEl.classList.toggle('btn-outline-danger');
             bntEl.classList.toggle('btn-outline-success');
+            titleEl.innerHTML = "LA LAMPADINA E' SPENTA";
         }
     }
 )
