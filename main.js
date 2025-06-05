@@ -7,3 +7,23 @@ Al primo click la lampadina si accende e nel bottone compare la scritta "Spegni"
 Al secondo click la lampadina si spegne e nel bottone compare la scritta "Accendi"
 E così via...
 */
+
+let lampWhiteEl = document.querySelector('img');
+// console.log(lampWhite)
+let bntEl = document.querySelector('button');
+
+bntEl.addEventListener('click',
+    function changeColor() {
+        if (lampWhiteEl.src.includes('white')) {
+            lampWhiteEl.src = './img-9/yellow_lamp_good.png';
+            bntEl.innerHTML = 'Spegni la lampadina';
+            bntEl.classList.toggle('btn-outline-danger');
+            bntEl.classList.toggle('btn-outline-success');
+        } else if (lampWhiteEl.src.includes('yellow')) {
+            lampWhiteEl.src = './img-9/white_lamp_good.png';
+            bntEl.innerHTML = 'Accendi la lampadina';
+            bntEl.classList.toggle('btn-outline-danger');
+            bntEl.classList.toggle('btn-outline-success');
+        }
+    }
+)
